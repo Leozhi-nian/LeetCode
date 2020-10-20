@@ -6,6 +6,10 @@ import java.util.List;
 
 /**
  * @author leozhi
+ * 排序 + 双指针
+ * 官方题解
+ * 通过
+ * 3ms
  */
 class Solution01 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
