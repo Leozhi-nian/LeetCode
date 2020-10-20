@@ -9,8 +9,8 @@ package com.leozhi.topic15;
  */
 public class Main {
     public static void main(String[] args) {
-        Solution01 solution01 = new Solution01();
+        Solution02 solution02 = new Solution02();
         int[] nums = {-1,0,1,2,-1,-4};
-        solution01.threeSum(nums);
+        System.out.println(solution02.threeSum(nums));
     }
 }
