@@ -7,6 +7,7 @@ import java.util.Map;
  * @author leozhi
  * 哈希表
  * 通过
+ * 2ms
  */
 public class Solution01 {
     public int[] twoSum(int[] nums, int target) {

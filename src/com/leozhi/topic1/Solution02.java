@@ -4,6 +4,7 @@ package com.leozhi.topic1;
  * @author leozhi
  * 暴力枚举
  * 通过
+ * 69ms
  */
 public class Solution02 {
     public int[] twoSum(int[] nums, int target) {
