@@ -1,8 +1,10 @@
-package com.leozhi.topic0208;
+package com.leozhi.interview0208;
 
 /**
  * @author leozhi
+ * 快慢指针
  * 通过
+ * 0ms
  */
 public class Solution01 {
     public ListNode detectCycle(ListNode head) {
