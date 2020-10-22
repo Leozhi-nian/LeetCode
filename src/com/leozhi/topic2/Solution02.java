@@ -2,7 +2,9 @@ package com.leozhi.topic2;
 
 /**
  * @author leozhi
+ * 模拟
  * 通过
+ * 3ms
  */
 public class Solution02 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

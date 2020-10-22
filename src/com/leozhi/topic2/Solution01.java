@@ -5,12 +5,14 @@ import java.util.List;
 
 /**
  * @author leozhi
+ * 模拟
  * 通过
+ * 3ms
  */
 public class Solution01 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         List<Integer> sumArray = new ArrayList<>();
-        int carry = 0, sum = 0;
+        int carry = 0, sum;
         while (l1 != null || l2 != null) {
             sum = carry + (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val);
             if (sum >= 10) {
