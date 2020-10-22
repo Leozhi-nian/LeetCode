@@ -2,7 +2,10 @@ package com.leozhi.topic7;
 
 /**
  * @author leozhi
+ * 弹出和推入数字 & 溢出前进行检查
+ * 官方题解
  * 通过
+ * 1ms
  */
 public class Solution01 {
     public int reverse(int x) {
