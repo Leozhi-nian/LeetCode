@@ -7,11 +7,11 @@ import java.util.Map;
  * @author leozhi
  * 滑动窗口
  * 通过
+ * 9ms
  */
 public class Solution02 {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> window = new HashMap<>();
-
         int left = 0, right = 0;
         int ans = 0;
         while (right < s.length()) {
