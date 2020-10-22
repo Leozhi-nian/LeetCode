@@ -8,6 +8,7 @@ package com.leozhi.topic771;
  */
 public class Solution07 {
     public int numJewelsInStones(String J, String S) {
+        // 匹配 J 中字符，并将其替换为 ""
         return S.replaceAll("[^" + J + "]", "").length();
     }
 }
