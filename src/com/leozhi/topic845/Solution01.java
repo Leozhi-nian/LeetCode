@@ -2,6 +2,9 @@ package com.leozhi.topic845;
 
 /**
  * @author leozhi
+ * 暴力枚举
+ * 通过
+ * 2ms
  */
 public class Solution01 {
     public int longestMountain(int[] A) {
@@ -17,12 +20,16 @@ public class Solution01 {
                     left--;
                     if (A[left] < A[left + 1]) {
                         temp++;
+                    } else {
+                        break;
                     }
                 }
                 while (right < A.length - 1) {
                     right++;
                     if (A[right] < A[right - 1]) {
                         temp++;
+                    } else {
+                        break;
                     }
                 }
                 if (temp > length) {

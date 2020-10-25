@@ -15,7 +15,7 @@ package com.leozhi.topic845;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] array = {2,1,4,7,3,2,5};
+        int[] array = {1,2,0,2,0,2};
         Solution01 solution01 = new Solution01();
         solution01.longestMountain(array);
     }
