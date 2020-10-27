@@ -2,6 +2,9 @@ package com.leozhi.topic122;
 
 /**
  * @author leozhi
+ * 贪心算法
+ * 通过
+ * 1ms
  */
 public class Solution01 {
     public int maxProfit(int[] prices) {
