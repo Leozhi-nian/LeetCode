@@ -8,7 +8,7 @@ package com.leozhi.topic1482;
  */
 public class Solution01 {
     public int minDays(int[] bloomDay, int m, int k) {
-        if (m > bloomDay.length * k) {
+        if (m * k > bloomDay.length) {
             return -1;
         }
         int max = getMax(bloomDay);
