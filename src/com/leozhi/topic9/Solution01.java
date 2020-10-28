@@ -2,7 +2,9 @@ package com.leozhi.topic9;
 
 /**
  * @author leozhi
+ * 反转一半数字
  * 通过
+ * 10ms
  */
 public class Solution01 {
     public boolean isPalindrome(int x) {
