@@ -7,6 +7,7 @@ package com.leozhi.topic9;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution02 solution02 = new Solution02();
+        solution02.isPalindrome(121);
     }
 }
