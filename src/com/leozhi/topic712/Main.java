@@ -8,6 +8,6 @@ package com.leozhi.topic712;
 public class Main {
     public static void main(String[] args) {
         Solution02 solution02 = new Solution02();
-        solution02.minimumDeleteSum("sea", "eat");
+        solution02.minimumDeleteSum("delete", "leet");
     }
 }
