@@ -6,6 +6,9 @@ import java.util.Map;
 
 /**
  * @author leozhi
+ * 哈希表
+ * 通过
+ * 4ms
  */
 public class Solution01 {
     public int[] intersect(int[] nums1, int[] nums2) {
