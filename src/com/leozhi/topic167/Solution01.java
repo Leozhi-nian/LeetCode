@@ -23,6 +23,13 @@ public class Solution01 {
                     left = mid + 1;
                 }
             }
+<<<<<<< HEAD
+=======
+            if (numbers[i] + numbers[left] == target) {
+                res[0] = i + 1;
+                res[1] = left + 1;
+            }
+>>>>>>> origin/master
         }
         return res;
     }
