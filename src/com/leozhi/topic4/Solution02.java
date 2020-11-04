@@ -2,7 +2,9 @@ package com.leozhi.topic4;
 
 /**
  * @author leozhi
+ * 递归
  * 通过
+ * 3ms
  */
 public class Solution02 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
