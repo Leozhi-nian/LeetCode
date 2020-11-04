@@ -12,6 +12,11 @@
 
 ### 左右指针
 
+* [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
+* [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)
+* [9. 回文数](https://leetcode-cn.com/problems/palindrome-number/)
+* [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+* [18. 四数之和](https://leetcode-cn.com/problems/4sum/)
 * [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/)
 
 ### 滑动窗口
@@ -23,7 +28,7 @@
 ## 哈希表
 
 * [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
-
+* [13. 罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/)
 
 ## 动态规划
 
