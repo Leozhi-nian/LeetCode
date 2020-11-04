@@ -9,9 +9,6 @@ package com.leozhi.topic57;
  */
 public class Main {
     public static void main(String[] args) {
-        int[][] arrays = {{1, 5}};
-        int[] array = {0, 0};
-        Solution01 solution01 = new Solution01();
-        solution01.insert(arrays, array);
+
     }
 }
