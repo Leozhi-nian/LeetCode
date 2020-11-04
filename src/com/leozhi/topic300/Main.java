@@ -7,8 +7,5 @@ package com.leozhi.topic300;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {1,6,3,5,10,18,9,6,13};
-        Solution01 solution01 = new Solution01();
-        solution01.lengthOfLIS(nums);
     }
 }
