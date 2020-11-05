@@ -1,7 +1,5 @@
 package com.leozhi.topic127;
 
-import java.util.Arrays;
-
 /**
  * @author leozhi
  * 127. 单词接龙
@@ -19,8 +17,5 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        String[] strings = {"hot","dot","dog","lot","log","cog"};
-        Solution01 solution01 = new Solution01();
-        solution01.ladderLength("hit", "cog", Arrays.asList(strings));
     }
 }

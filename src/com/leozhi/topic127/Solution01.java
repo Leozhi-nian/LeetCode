@@ -4,45 +4,92 @@ import java.util.*;
 
 /**
  * @author leozhi
+ * 广度优先搜索
+ * 官方题解
+ * 通过
+ * 29ms
  */
 public class Solution01 {
-    Map<String, Integer> memo = new HashMap<>();;
+    Map<String, Integer> wordId = new HashMap<String, Integer>();
+    List<List<Integer>> edge = new ArrayList<List<Integer>>();
+    int nodeNum = 0;
+
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        for (String s : wordList) {
-            int count = 0;
-            for (int i = 0; i < beginWord.length(); i++) {
-                if (s.charAt(i) != beginWord.charAt(i)) {
-                    count++;
+        for (String word : wordList) {
+            addEdge(word);
+        }
+        addEdge(beginWord);
+        if (!wordId.containsKey(endWord)) {
+            return 0;
+        }
+
+        int[] disBegin = new int[nodeNum];
+        Arrays.fill(disBegin, Integer.MAX_VALUE);
+        int beginId = wordId.get(beginWord);
+        disBegin[beginId] = 0;
+        Queue<Integer> queBegin = new LinkedList<Integer>();
+        queBegin.offer(beginId);
+
+        int[] disEnd = new int[nodeNum];
+        Arrays.fill(disEnd, Integer.MAX_VALUE);
+        int endId = wordId.get(endWord);
+        disEnd[endId] = 0;
+        Queue<Integer> queEnd = new LinkedList<Integer>();
+        queEnd.offer(endId);
+
+        while (!queBegin.isEmpty() && !queEnd.isEmpty()) {
+            int queBeginSize = queBegin.size();
+            for (int i = 0; i < queBeginSize; ++i) {
+                int nodeBegin = queBegin.poll();
+                if (disEnd[nodeBegin] != Integer.MAX_VALUE) {
+                    return (disBegin[nodeBegin] + disEnd[nodeBegin]) / 2 + 1;
+                }
+                for (int it : edge.get(nodeBegin)) {
+                    if (disBegin[it] == Integer.MAX_VALUE) {
+                        disBegin[it] = disBegin[nodeBegin] + 1;
+                        queBegin.offer(it);
+                    }
                 }
             }
-            memo.put(s, count);
+
+            int queEndSize = queEnd.size();
+            for (int i = 0; i < queEndSize; ++i) {
+                int nodeEnd = queEnd.poll();
+                if (disBegin[nodeEnd] != Integer.MAX_VALUE) {
+                    return (disBegin[nodeEnd] + disEnd[nodeEnd]) / 2 + 1;
+                }
+                for (int it : edge.get(nodeEnd)) {
+                    if (disEnd[it] == Integer.MAX_VALUE) {
+                        disEnd[it] = disEnd[nodeEnd] + 1;
+                        queEnd.offer(it);
+                    }
+                }
+            }
         }
-        return ladder(beginWord, endWord, wordList);
+        return 0;
     }
 
-    private int ladder(String beginWord, String endWord, List<String> wordList) {
-        if (!memo.containsKey(endWord)) {
-            return 0;
-        }else if (memo.get(endWord) == 1) {
-            return 1;
+    public void addEdge(String word) {
+        addWord(word);
+        int id1 = wordId.get(word);
+        char[] array = word.toCharArray();
+        int length = array.length;
+        for (int i = 0; i < length; ++i) {
+            char tmp = array[i];
+            array[i] = '*';
+            String newWord = new String(array);
+            addWord(newWord);
+            int id2 = wordId.get(newWord);
+            edge.get(id1).add(id2);
+            edge.get(id2).add(id1);
+            array[i] = tmp;
         }
-        int res = Integer.MAX_VALUE;
-        for (int i = 0; i < wordList.size(); i++) {
-            int count = 0;
-            for (int j = 0; j < endWord.length(); j++) {
-                String s = wordList.get(i);
-                if (wordList.get(i).charAt(j) != endWord.charAt(j)) {
-                    count++;
-                }
-            }
-            if (count == 1) {
-                int temp = ladder(beginWord, wordList.get(i), wordList);
-                if (temp != 0) {
-                    res = Math.min(res, temp + 1);
-                    return res;
-                }
-            }
+    }
+
+    public void addWord(String word) {
+        if (!wordId.containsKey(word)) {
+            wordId.put(word, nodeNum++);
+            edge.add(new ArrayList<Integer>());
         }
-        return res;
     }
 }
