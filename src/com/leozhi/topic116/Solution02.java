@@ -2,12 +2,15 @@ package com.leozhi.topic116;
 
 /**
  * @author leozhi
+ * 使用已建立的 next 指针
+ * 官方题解
  * 通过
+ * 0ms
  */
 public class Solution02 {
     public Node connect(Node root) {
         if (root == null) {
-            return root;
+            return null;
         }
 
         Node mostLeft = root;

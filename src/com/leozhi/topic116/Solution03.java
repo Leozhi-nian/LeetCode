@@ -2,11 +2,14 @@ package com.leozhi.topic116;
 
 /**
  * @author leozhi
+ * 递归 + 使用已建立的 next 指针
+ * 通过
+ * 0ms
  */
 public class Solution03 {
     public Node connect(Node root) {
         if (root == null) {
-            return root;
+            return null;
         }
         if (root.left != null) {
             root.left.next = root.right;

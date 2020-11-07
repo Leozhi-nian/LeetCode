@@ -5,12 +5,15 @@ import java.util.Queue;
 
 /**
  * @author leozhi
+ * 层次遍历
+ * 官方题解
  * 通过
+ * 4ms
  */
 public class Solution01 {
     public Node connect(Node root) {
         if (root == null) {
-            return root;
+            return null;
         }
 
         Queue<Node> queue = new LinkedList<>();
