@@ -16,7 +16,5 @@ package com.leozhi.topic514;
  */
 public class Main {
     public static void main(String[] args) {
-        Solution01 solution = new Solution01();
-        solution.findRotateSteps("caotmcaataijjxi", "oatjiioicitatajtijciocjcaaxaaatmctxamacaamjjx");
     }
 }

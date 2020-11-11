@@ -1,35 +1,40 @@
 package com.leozhi.topic514;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author leozhi
+ * 动态规划
+ * 官方题解
+ * 通过
+ * 14ms
  */
 public class Solution01 {
     public int findRotateSteps(String ring, String key) {
-        int m = ring.length(), n = key.length();
-        int[][] steps = new int[m][m];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < m; j++) {
-                if (Math.abs(j - i) > m / 2) {
-                    steps[i][j] = m - Math.abs(j - i);
-                } else {
-                    steps[i][j] = Math.abs(j - i);
+        int n = ring.length(), m = key.length();
+        List<Integer>[] pos = new List[26];
+        for (int i = 0; i < 26; ++i) {
+            pos[i] = new ArrayList<Integer>();
+        }
+        for (int i = 0; i < n; ++i) {
+            pos[ring.charAt(i) - 'a'].add(i);
+        }
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; ++i) {
+            Arrays.fill(dp[i], 0x3f3f3f);
+        }
+        for (int i : pos[key.charAt(0) - 'a']) {
+            dp[0][i] = Math.min(i, n - i) + 1;
+        }
+        for (int i = 1; i < m; ++i) {
+            for (int j : pos[key.charAt(i) - 'a']) {
+                for (int k : pos[key.charAt(i - 1) - 'a']) {
+                    dp[i][j] = Math.min(dp[i][j], dp[i - 1][k] + Math.min(Math.abs(j - k), n - Math.abs(j - k)) + 1);
                 }
             }
         }
-        int start, end = 0, step, res = 0;
-        for (int i = 0; i < n; i++) {
-            step = m;
-            start = end;
-            for (int j = 0; j < m; j++) {
-                if (key.charAt(i) == ring.charAt(j)) {
-                    if (steps[start][j] < step) {
-                        step = steps[start][j];
-                        end = j;
-                    }
-                }
-            }
-            res += step + 1;
-        }
-        return res;
+        return Arrays.stream(dp[m - 1]).min().getAsInt();
     }
 }
