@@ -33,3 +33,16 @@
 ## 动态规划
 
 * [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
+* [514. 自由之路](https://leetcode-cn.com/problems/freedom-trail/)
+
+### 背包问题
+
+* [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
+
+## 广度优先搜索
+
+* [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+
+* [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+* [637. 二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
