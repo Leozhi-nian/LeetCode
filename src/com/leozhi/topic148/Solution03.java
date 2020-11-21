@@ -21,6 +21,7 @@ public class Solution03 {
         }
         // 用于记录右侧节点
         ListNode temp = slow.next;
+        // 将链表分为左右两部分
         slow.next = null;
         // 递归
         ListNode left = sortList(head);
