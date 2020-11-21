@@ -2,6 +2,9 @@ package com.leozhi.topic147;
 
 /**
  * @author leozhi
+ * 暴力
+ * 通过
+ * 28ms
  */
 public class Solution02 {
     public ListNode insertionSortList(ListNode head) {
