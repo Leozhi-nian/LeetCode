@@ -24,10 +24,8 @@ public class Solution01 {
             for (int i = 0; i < size; i++) {
                 TreeNode cur = queue.poll();
                 if (i == size - 1) {
-                    assert cur != null;
                     res.add(cur.val);
                 }
-                assert cur != null;
                 if (cur.left != null) {
                     queue.add(cur.left);
                 }
