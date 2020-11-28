@@ -9,14 +9,18 @@ package com.leozhi.topic167
 class Solution03 {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
         var left = 0
-        var right = numbers.size - 1;
+        var right = numbers.size - 1
         while (left < right) {
-            if (numbers[left] + numbers[right] == target) {
-                return intArrayOf(left + 1, right + 1)
-            } else if (numbers[left] + numbers[right] < target) {
-                left++
-            } else if (numbers[left] + numbers[right] > target) {
-                right--
+            when {
+                numbers[left] + numbers[right] == target -> {
+                    return intArrayOf(left + 1, right + 1)
+                }
+                numbers[left] + numbers[right] < target -> {
+                    left++
+                }
+                numbers[left] + numbers[right] > target -> {
+                    right--
+                }
             }
         }
         return intArrayOf(left + 1, right + 1)
