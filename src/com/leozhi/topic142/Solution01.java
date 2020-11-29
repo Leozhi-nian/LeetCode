@@ -2,6 +2,9 @@ package com.leozhi.topic142;
 
 /**
  * @author leozhi
+ * 快慢指针
+ * 通过
+ * 0ms
  */
 public class Solution01 {
     public ListNode detectCycle(ListNode head) {
