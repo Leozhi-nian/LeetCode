@@ -1,5 +1,9 @@
 package com.leozhi.topic34;
 
+import com.leozhi.testcase.array.IntegerArray;
+
+import java.util.Arrays;
+
 /**
  * @author leozhi
  * 34. 在排序数组中查找元素的第一个和最后一个位置
@@ -11,6 +15,8 @@ package com.leozhi.topic34;
  */
 public class Main {
     public static void main(String[] args) {
-
+        int[] array = IntegerArray.createArray(10000, 0, 50);
+        Arrays.sort(array);
+        System.out.println(IntegerArray.getArrayString(array));
     }
 }
