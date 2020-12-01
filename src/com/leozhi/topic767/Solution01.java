@@ -1,40 +1,44 @@
 package com.leozhi.topic767;
 
-import java.util.Arrays;
-
 /**
  * @author leozhi
- * 未通过
+ * 基于计数的贪心算法
+ * 官方题解
+ * 通过
+ * 1ms
  */
 public class Solution01 {
     public String reorganizeString(String S) {
         int len = S.length();
-        char[] chars = S.toCharArray();
-        int[][] table = new int[26][2];
+        if (len < 2) {
+            return S;
+        }
+        int[] counts = new int[26];
+        int maxCount = 0;
         for (int i = 0; i < len; i++) {
-            table[chars[i] - 'a'][0] = chars[i];
-            if (++table[chars[i] - 'a'][1] > (len + 1) / 2) {
-                return "";
-            }
+            char c = S.charAt(i);
+            ++counts[c - 'a'];
+            maxCount = Math.max(maxCount, counts[c - 'a']);
         }
-        Arrays.sort(table, (o1, o2) -> o2[1] - o1[1]);
-        int index = 0;
+        if (maxCount > (len + 1) / 2) {
+            return "";
+        }
+        char[] reorganizeArray = new char[len];
+        int evenIndex = 0, oddIndex = 1;
+        int halfLength = len / 2;
         for (int i = 0; i < 26; i++) {
-            for (int j = 0; j < table[i][1]; j++) {
-                chars[index++] = (char)(table[i][0]);
+            char c = (char)('a' + i);
+            while (counts[i] > 0 && counts[i] <= halfLength && oddIndex < len) {
+                reorganizeArray[oddIndex] = c;
+                --counts[i];
+                oddIndex += 2;
+            }
+            while (counts[i] > 0) {
+                reorganizeArray[evenIndex] = c;
+                --counts[i];
+                evenIndex += 2;
             }
         }
-        for (int i = 0; i < table[0][1]; i++) {
-            for (int j = 1; j < len - 1; j++) {
-                if (chars[j] == chars[j - 1]) {
-                    char temp = chars[j];
-                    chars[j] = chars[j + 1];
-                    chars[j + 1] = temp;
-                }
-            }
-        }
-        // vvvvvdejs
-        // aabbcc
-        return String.valueOf(chars);
+        return new String(reorganizeArray);
     }
 }
