@@ -45,4 +45,31 @@
 * [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 * [107. 二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
 * [199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
+* [429. N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)
 * [637. 二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
+
+## 贪心算法
+
+* [402. 移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)
+
+## 单调栈
+
+* [402. 移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)
+
+## 回溯
+
+* [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+* [46. 全排列](https://leetcode-cn.com/problems/permutations/)
+* [401. 二进制手表](https://leetcode-cn.com/problems/binary-watch/)
+* [842. 将数组拆分成斐波那契序列](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence/)
+
+## 二叉树
+
+### 前序遍历
+
+### 中序遍历
+
+* [99. 恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree/)
+
+### 后序遍历
+
