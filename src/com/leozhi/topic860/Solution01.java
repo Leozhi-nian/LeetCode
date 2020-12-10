@@ -2,6 +2,9 @@ package com.leozhi.topic860;
 
 /**
  * @author leozhi
+ * 贪心算法
+ * 通过
+ * 3ms
  */
 public class Solution01 {
     public boolean lemonadeChange(int[] bills) {

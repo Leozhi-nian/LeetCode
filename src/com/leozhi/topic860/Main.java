@@ -14,7 +14,5 @@ package com.leozhi.topic860;
  * 如果你能给每位顾客正确找零，返回 true ，否则返回 false 。
  */
 public class Main {
-    public static void main(String[] args) {
 
-    }
 }
