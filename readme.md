@@ -51,6 +51,7 @@
 ## 贪心算法
 
 * [402. 移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)
+* [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
 
 ## 单调栈
 
@@ -59,6 +60,8 @@
 ## 回溯
 
 * [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+* [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
+* [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
 * [46. 全排列](https://leetcode-cn.com/problems/permutations/)
 * [401. 二进制手表](https://leetcode-cn.com/problems/binary-watch/)
 * [842. 将数组拆分成斐波那契序列](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence/)
