@@ -1,22 +1,21 @@
 package com.leozhi.topic217;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author leozhi
  * 哈希表
  * 通过
- * 10ms
+ * 5ms
  */
-public class Solution01 {
+public class Solution03 {
     public boolean containsDuplicate(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
-            if (map.containsKey(num)) {
+            if (!set.add(num)) {
                 return true;
             }
-            map.put(num, 0);
         }
         return false;
     }
