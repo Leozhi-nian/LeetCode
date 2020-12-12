@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author leozhi
- * 集合 + 快慢指针
+ * 集合 + 左右指针
  * 通过
  * 4ms
  */
