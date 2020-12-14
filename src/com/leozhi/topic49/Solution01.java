@@ -30,8 +30,8 @@ public class Solution01 {
             table.put(map, list);
         }
         List<List<String>> res = new ArrayList<>();
-        for (Map.Entry entry : table.entrySet()) {
-            res.add((List<String>) entry.getValue());
+        for (Map.Entry<Map<Character, Integer>, List<String>> entry : table.entrySet()) {
+            res.add(entry.getValue());
         }
         return res;
     }
