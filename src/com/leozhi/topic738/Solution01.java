@@ -5,7 +5,8 @@ import java.util.Arrays;
 /**
  * @author leozhi
  * 贪心 + 快慢指针
- * 通过 2ms
+ * 通过
+ * 2ms
  */
 public class Solution01 {
     public int monotoneIncreasingDigits(int N) {
