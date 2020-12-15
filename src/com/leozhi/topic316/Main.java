@@ -7,6 +7,7 @@ package com.leozhi.topic316;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution01 solution = new Solution01();
+        solution.removeDuplicateLetters("bcabc");
     }
 }
