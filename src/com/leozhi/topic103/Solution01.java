@@ -5,7 +5,8 @@ import java.util.*;
 /**
  * @author leozhi
  * 广度优先搜索
- * 通过 1ms
+ * 通过
+ * 1ms
  */
 public class Solution01 {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
