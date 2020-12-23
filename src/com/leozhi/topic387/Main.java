@@ -7,6 +7,7 @@ package com.leozhi.topic387;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution03 solution = new Solution03();
+        solution.firstUniqChar("abcdxyz");
     }
 }
