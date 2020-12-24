@@ -5,6 +5,9 @@ import java.util.List;
 
 /**
  * @author leozhi
+ * 集合
+ * 通过
+ * 842ms
  */
 public class Solution02 {
     public int singleNumber(int[] nums) {

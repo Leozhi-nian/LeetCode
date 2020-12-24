@@ -5,6 +5,9 @@ import java.util.Map;
 
 /**
  * @author leozhi
+ * 哈希表
+ * 通过
+ * 14ms
  */
 public class Solution01 {
     public int singleNumber(int[] nums) {
