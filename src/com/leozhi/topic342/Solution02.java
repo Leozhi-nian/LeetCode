@@ -8,6 +8,6 @@ package com.leozhi.topic342;
  */
 public class Solution02 {
     public boolean isPowerOfFour(int n) {
-        return n > 0 && (n & (n - 1)) != 0 && (n & 1431655765) == 0;
+        return n > 0 && (n & (n - 1)) == 0 && (n & 0xaaaaaaaa) == 0;
     }
 }
