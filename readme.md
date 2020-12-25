@@ -26,6 +26,8 @@
 
 ## 二分查找
 
+* [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
+
 ## 哈希表
 
 * [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
