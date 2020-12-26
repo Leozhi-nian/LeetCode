@@ -2,19 +2,22 @@ package com.leozhi.contest.double42.topic2;
 
 /**
  * @author leozhi
+ * 模拟
+ * 通过
+ * 3ms
  */
 public class Solution {
     public double averageWaitingTime(int[][] customers) {
-        int len = customers.length, time = customers[0][1];
-        customers[0][1] += customers[0][0];
-        for (int i = 1; i < len; i++) {
-            if (customers[i][0] <= customers[i - 1][1]) {
-                customers[i][1] += customers[i - 1][1];
-            } else {
-                customers[i][1] += customers[i][0];
-            }
-            time += (customers[i][1] - customers[i][0]);
+        double res = 0;
+        int cur = 0;
+        for (int[] customer : customers) {
+            // 当前订单开始
+            cur = Math.max(cur, customer[0]);
+            // 当前订单结束
+            cur += customer[1];
+            // 当前订单花费时间
+            res += cur - customer[0];
         }
-        return (double)time / len;
+        return res / (double)customers.length;
     }
 }
