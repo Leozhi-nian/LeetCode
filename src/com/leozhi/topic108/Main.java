@@ -1,5 +1,7 @@
 package com.leozhi.topic108;
 
+import com.leozhi.testcase.array.IntegerArray;
+
 import java.util.Arrays;
 
 /**
@@ -11,10 +13,8 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] src = new int[]{1, 2, 3, 4, 5};
-        int newArray[] = Arrays.copyOfRange(src, 0, 2);
-        for (int i : newArray) {
-            System.out.println(i);
-        }
+        int[] array = IntegerArray.createArray(1000, 0, 1000);
+        Arrays.sort(array);
+        System.out.println(IntegerArray.getArrayString(array));
     }
 }
