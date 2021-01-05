@@ -11,6 +11,7 @@ package com.leozhi.topic509;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution03 solution = new Solution03();
+        solution.fib(30);
     }
 }
