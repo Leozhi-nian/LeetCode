@@ -12,7 +12,7 @@ import java.util.List;
 public class Solution01 {
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> res = new ArrayList<>();
-        int start = 0, end = 0, len = s.length(), distance = 0;
+        int start = 0, end = 0, len = s.length(), distance;
         for (int i = 1; i <= len; i++) {
             if (i != len && s.charAt(i) == s.charAt(i - 1)) {
                 ++end;
