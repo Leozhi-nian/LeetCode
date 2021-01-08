@@ -2,6 +2,9 @@ package com.leozhi.topic189;
 
 /**
  * @author leozhi
+ * 数组拷贝
+ * 通过
+ * 50ms
  */
 public class Solution02 {
     public void rotate(int[] nums, int k) {
