@@ -17,6 +17,6 @@ package com.leozhi.topic6;
 public class Main {
     public static void main(String[] args) {
         Solution01 solution = new Solution01();
-        solution.convert("LEETCODEISHIRING", 4);
+        solution.convert("PAYPALISHIRINGG", 3);
     }
 }
