@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 /**
  * @author leozhi
+ * 动态规划 自底而上
+ * 通过
+ * 14ms
  */
 public class Solution01 {
     public int coinChange(int[] coins, int amount) {
