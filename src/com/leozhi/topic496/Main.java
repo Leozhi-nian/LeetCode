@@ -9,6 +9,7 @@ package com.leozhi.topic496;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution03 solution = new Solution03();
+        solution.nextGreaterElement(new int[]{4, 1, 2}, new int[]{1, 5, 2, 4});
     }
 }
