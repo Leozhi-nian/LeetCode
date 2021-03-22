@@ -1,7 +1,5 @@
 package com.leozhi.topic12
 
-import com.sun.xml.internal.fastinfoset.util.StringArray
-
 /**
  * @author leozhi
  * 硬编码数字

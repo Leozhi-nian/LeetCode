@@ -12,6 +12,7 @@ package com.leozhi.topic191;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Solution02 solution = new Solution02();
+        solution.hammingWeight(-3);
     }
 }
