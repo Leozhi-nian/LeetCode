@@ -2,6 +2,9 @@ package com.leozhi.topic83;
 
 /**
  * @author leozhi
+ * 一次遍历
+ * 通过
+ * 1ms
  */
 public class Solution01 {
     public ListNode deleteDuplicates(ListNode head) {
