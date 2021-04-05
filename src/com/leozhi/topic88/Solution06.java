@@ -2,7 +2,7 @@ package com.leozhi.topic88;
 
 /**
  * @author leozhi
- * 双指针
+ * 逆向双指针
  * 通过
  * 0ms
  */
