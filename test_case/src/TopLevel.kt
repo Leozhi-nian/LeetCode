@@ -17,6 +17,16 @@ fun createIntArray(size: Int, min: Int = 0, max: Int = 100): String {
     return stringBuilder.toString()
 }
 
+fun createSortedIntArray(size: Int, min: Int = 0, max: Int = 100): String {
+    val random = Random(System.currentTimeMillis())
+    val list = ArrayList<Int>()
+    for (i in 0 until size) {
+        list.add(random.nextInt(max) % (max - min + 1) + min)
+    }
+    list.sort()
+    return "[${list.joinToString(",")}]"
+}
+
 fun createString(length: Int, vararg range: CharRange): String {
     val random = Random(System.currentTimeMillis())
     val stringBuilder = StringBuilder()
