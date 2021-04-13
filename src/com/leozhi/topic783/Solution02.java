@@ -7,6 +7,7 @@ import java.util.List;
  * @author leozhi
  * 递归
  * 通过
+ * 0ms
  */
 public class Solution02 {
     public int minDiffInBST(TreeNode root) {

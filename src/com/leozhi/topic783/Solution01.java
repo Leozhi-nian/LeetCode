@@ -4,6 +4,7 @@ package com.leozhi.topic783;
  * @author leozhi
  * Morris 遍历
  * 通过
+ * 0ms
  */
 public class Solution01 {
     public int minDiffInBST(TreeNode root) {
