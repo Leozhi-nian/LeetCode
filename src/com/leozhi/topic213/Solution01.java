@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 /**
  * @author leozhi
+ * 动态规划
+ * 通过
+ * 0ms
  */
 public class Solution01 {
     public int rob(int[] nums) {
