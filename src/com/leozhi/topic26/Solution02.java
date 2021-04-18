@@ -2,6 +2,9 @@ package com.leozhi.topic26;
 
 /**
  * @author leozhi
+ * 快慢指针
+ * 通过
+ * 1ms
  */
 public class Solution02 {
     public int removeDuplicates(int[] nums) {
