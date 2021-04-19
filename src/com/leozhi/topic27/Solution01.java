@@ -2,6 +2,9 @@ package com.leozhi.topic27;
 
 /**
  * @author leozhi
+ * 快慢指针
+ * 通过
+ * 0ms
  */
 public class Solution01 {
     public int removeElement(int[] nums, int val) {
